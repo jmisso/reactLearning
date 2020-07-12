@@ -19,3 +19,7 @@ React virtual DOM to enhance its performance. React can get the different of eac
 # ToDo List (Practice Example)
   - Styling: use "className" in js file.
 # Some Caveats
+  - when we want to use javascript instead of JSX, we need {} to wrap the variable.
+  - {firstName +" " +lastName}
+# Inline Styles with the Style Property
+  - 
