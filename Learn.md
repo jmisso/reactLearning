@@ -16,3 +16,6 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - element is the the break down to regular HTML code.
   - component can be a parent component which contains multiple child components.
   - the leaf component need to end up as regular HTML element.
+# ToDo List (Practice Example)
+  - Styling: use "className" in js file.
+# Some Caveats
