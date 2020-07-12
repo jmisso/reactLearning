@@ -13,4 +13,6 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - every file we need JSX, we need to import React
   - component need to be exported in the files.
 # Parent/Child components
-  - 
+  - element is the the break down to regular HTML code.
+  - component can be a parent component which contains multiple child components.
+  - the leaf component need to end up as regular HTML element.
