@@ -22,4 +22,7 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - when we want to use javascript instead of JSX, we need {} to wrap the variable.
   - {firstName +" " +lastName}
 # Inline Styles with the Style Property
-  - 
+  - in JS, style need to be an object instead of string in HTML.
+  - style={{color: "#FF8C00", , backgroundColor: "#FF2D00"}}}; {{}} is needed because in JSX into JS we need to wrap in one {}; backgroundColor is equal to background-color, because in JS there's no -. so JS cannot recognize backgroubnd-color
+  - fontSize: "200px"; the "" is needed to make into string.
+# Props
