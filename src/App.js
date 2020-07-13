@@ -56,14 +56,37 @@ import jokeData from './practice/jokeData';
 //   )
 // }
 
+// class based component
+// class App extends React.Component {
+//   render() {
+//     const date = new Date();
+//     return (
+//       <div>
+//         <NavBar />
+//         <MainContent username="Zelan" />
+//         <Footer />
+//       </div>
+//     )
+//   }
+// }
+
 class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      answer: "Yes"
+    }
+  }
+
   render() {
-    const date = new Date();
     return (
       <div>
         <NavBar />
         <MainContent username="Zelan" />
         <Footer />
+        <h2>
+          Is state important to know? {this.state.answer}
+        </h2>
       </div>
     )
   }
