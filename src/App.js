@@ -4,6 +4,8 @@ import './App.css';
 import Footer from './components/Footer';
 import NavBar from './components/Navbar';
 import MainContent from './components/MainContent';
+import ContactCard from './ContactCard';
+import Joke from './practice/Joke';
 
 function App() {
   const firstName = "zelan"
@@ -29,11 +31,23 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>hello {firstName + " " + lastName}</h1>
-      <h2>{`${firstName} ${lastName}`}</h2>
-      <h2 style={styles}>It is currently about {date.getHours() %12} o'clock!</h2>
-      <h2 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Good {timeOfDay}</h2>
+    // <div>
+    //   <h1>hello {firstName + " " + lastName}</h1>
+    //   <h2>{`${firstName} ${lastName}`}</h2>
+    //   <h2 style={styles}>It is currently about {date.getHours() %12} o'clock!</h2>
+    //   <h2 style={{color: "#FF8C00", backgroundColor: "#FF2D00"}}>Good {timeOfDay}</h2>
+    // </div>
+    <div className="contacts">
+      <ContactCard
+        contact={{
+          name:"mr. white",
+          imgUrl:"http://placekitten.com/300/200",
+          phone:"65453543543",
+          email:"jhgjg@com"
+        }}
+      />
+      <Joke question="asdf" answer="hgjh"/>
+      <Joke answer="hadasui"/>
     </div>
   )
 }
