@@ -6,6 +6,7 @@ import NavBar from './components/Navbar';
 import MainContent from './components/MainContent';
 import ContactCard from './ContactCard';
 import Joke from './practice/Joke';
+import jokeData from './practice/jokeData';
 
 function App() {
   const firstName = "zelan"
@@ -14,15 +15,17 @@ function App() {
   const hours = date.getHours()
   let timeOfDay
 
+  const jokeComponents = jokeData.map(joke => <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine} />)
+
   const styles = {
     color: "#FF8C00",
     fontSize: "25px",
   }
 
-  if (hours <12) {
+  if (hours < 12) {
     timeOfDay = "morning"
     styles.color = "#04756F"
-  } else if (hours>=12 && hours<17) {
+  } else if (hours >= 12 && hours < 17) {
     timeOfDay = "afternoon"
     styles.color = "#8914A3"
   } else {
@@ -40,14 +43,15 @@ function App() {
     <div className="contacts">
       <ContactCard
         contact={{
-          name:"mr. white",
-          imgUrl:"http://placekitten.com/300/200",
-          phone:"65453543543",
-          email:"jhgjg@com"
+          name: "mr. white",
+          imgUrl: "http://placekitten.com/300/200",
+          phone: "65453543543",
+          email: "jhgjg@com"
         }}
       />
-      <Joke question="asdf" answer="hgjh"/>
-      <Joke answer="hadasui"/>
+      <Joke question="asdf" answer="hgjh" />
+      <Joke answer="hadasui" />
+      {jokeComponents}
     </div>
   )
 }

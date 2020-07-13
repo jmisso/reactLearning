@@ -29,3 +29,8 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - just like functional input variables.
   - we can pass an object instead of each property in element
   - inline styling canbe used when we choose to hide un-input variables.
+# Mapping Components
+  - higher order array method
+    - map: return an object
+# Class Based Components
+  - 
