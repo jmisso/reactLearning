@@ -33,4 +33,5 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - higher order array method
     - map: return an object
 # Class Based Components
-  - 
+  - class need to extend _React.Component_; render() method is a must
+  - everytime we need to use props, we ned to use as {this.props}
