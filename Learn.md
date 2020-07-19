@@ -53,3 +53,9 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - to change state, there're 2 ways
     - define a function in the component in render method.
     - define a function outside of render() method and use this.setState() method and bind the method in the constructor.
+# Lifecycle Method
+  - everytime React detects any changes will effect the render() method, it will re-render it.
+  - componentDidMount(), it means the component just be mounted to the screen. It will only run once when the component created.
+  - componentWillReceiveProps(), it will run when the component mount and also when the component receive props.
+  - shouldComponentUpdate(): decide wether you need to change your cloth or not.
+  - componentWillUnmount(): when to do some clean up or tear down.
