@@ -6,26 +6,26 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      isLoading: true
+      isLoggedIn: false
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
-  // run when the component mounts to the screen at very first time.
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        isLoading: false
-      })
-    }, 1500)
+  handleClick() {
+    this.setState(prevState => {
+      return {
+        isLoggedIn: !prevState.isLoggedIn
+      }
+    })
   }
 
   render() {
+    let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN"
+    let displayText = this.state.isLoggedIn ? "Logged in" : "Logged out"
     return (
       <div>
-        {this.state.isLoading ?
-        <h1>Loading...</h1> :
-        <Conditional />}
-        {/* // <Conditional isLoading={this.state.isLoading} /> */}
+        <button onClick={this.handleClick}>{buttonText}</button>
+        <h2>{displayText}</h2>
       </div>
     )
   }

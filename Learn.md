@@ -60,4 +60,5 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - shouldComponentUpdate(): decide wether you need to change your cloth or not.
   - componentWillUnmount(): when to do some clean up or tear down.
 # Conditional Render
-  - 
+  - condition statement ? if true : if false
+  - condition statement && if true
