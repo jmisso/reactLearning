@@ -1,44 +1,31 @@
 import React from 'react';
+import Conditional from './practice/Conditional';
 // import './App.css';
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      count: 0
+      isLoading: true
     }
   }
 
-  static getDerivedStateFromProps(props, state) {
-    // return the new, udpated state beased upon the props
-    // new added into ES7
-  }
-
-  getSnapshotBeforeUpdate() {
-    // create a backup for the current way things are
-  }
-
+  // run when the component mounts to the screen at very first time.
   componentDidMount() {
-    // get the data I need to correctly display
+    setTimeout(() => {
+      this.setState({
+        isLoading: false
+      })
+    }, 1500)
   }
-
-  // componentWillReceiveProps(nextProps) {
-
-  // }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    // return true of want it to update
-    // return false if not
-  }
-
-  // componentWillUnmount() {
-  //   // teardown or cleanup your code before your component disappear
-  // }
 
   render() {
     return (
       <div>
-        Code goes here
+        {this.state.isLoading ?
+        <h1>Loading...</h1> :
+        <Conditional />}
+        {/* // <Conditional isLoading={this.state.isLoading} /> */}
       </div>
     )
   }

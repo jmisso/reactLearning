@@ -59,3 +59,5 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - componentWillReceiveProps(), it will run when the component mount and also when the component receive props.
   - shouldComponentUpdate(): decide wether you need to change your cloth or not.
   - componentWillUnmount(): when to do some clean up or tear down.
+# Conditional Render
+  - 
