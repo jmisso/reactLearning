@@ -70,26 +70,42 @@ import jokeData from './practice/jokeData';
 //   }
 // }
 
-class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      answer: "Yes"
-    }
-  }
+// state
+// class App extends React.Component {
+//   constructor() {
+//     super()
+//     this.state = {
+//       answer: "Yes"
+//     }
+//   }
 
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <MainContent username="Zelan" />
-        <Footer />
-        <h2>
-          Is state important to know? {this.state.answer}
-        </h2>
-      </div>
-    )
-  }
+//   render() {
+//     return (
+//       <div>
+//         <NavBar />
+//         <MainContent username="Zelan" />
+//         <Footer />
+//         <h2>
+//           Is state important to know? {this.state.answer}
+//         </h2>
+//       </div>
+//     )
+//   }
+// }
+
+function handleClick() {
+  console.log("clicked")
+}
+
+function App() {
+  return (
+    <div>
+      <img onMouseOver={() => console.log("hoverd!")}src="http://placekitten.com/300/200" />
+      <br />
+      <br />
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  )
 }
 
 export default App;

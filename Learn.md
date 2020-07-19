@@ -39,3 +39,5 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - state is the data that component maintains
   - if we need to use _State_, it need to be class based components.
   - if we have a constructor in class, always add _super()_
+# Handling Events in React
+  - all the event handlers are going to Javascript version
