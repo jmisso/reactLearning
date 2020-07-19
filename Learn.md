@@ -41,3 +41,15 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - if we have a constructor in class, always add _super()_
 # Handling Events in React
   - all the event handlers are going to Javascript version
+# Changing State
+  - <button onClick={this.handleClick}>Change!</button>; add a function as "handleClick"; this keyword is required when you defined the function in the class.
+  - everytime you want to use _setState_ method, you need to bind the method in the constructor; this.handleClick = this.handleClick.bind(this)
+  - if you need to know the previous state, always pass "prevState", and return new state. do not use prevState.count++ because it will changed the prevState; prevState is an object that's why you can access it.
+  this.setState((preState) => {
+      return {
+        count: preState.count + 1
+      }
+    })
+  - to change state, there're 2 ways
+    - define a function in the component in render method.
+    - define a function outside of render() method and use this.setState() method and bind the method in the constructor.
