@@ -72,4 +72,11 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - to make the help function reusable, we can define a "name" property in the input tag. And handleChange() can get the event and use "event.target.name"" to get the parameter. [event.target.name] can change the property into string
   - Control Form:
     - add a "value" property
-    - An <input> with a value property is an controlled component:
+    - An <input> with a value property is an controlled component.
+  - textarea element
+  - Radio button
+  - "Formik" is a library for React form
+  - Select box
+  - Submit a form: use button
+    - when a button in form tag, it recognize as submit button
+    - submit event handler can be placed inside form tag.
