@@ -62,3 +62,8 @@ React virtual DOM to enhance its performance. React can get the different of eac
 # Conditional Render
   - condition statement ? if true : if false
   - condition statement && if true
+# Fetching Data from an API
+  - use "fetch()" to fetch data
+  - good to do in componentDidMount()
+# Forms
+  - 

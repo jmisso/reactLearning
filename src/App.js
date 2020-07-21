@@ -1,34 +1,38 @@
 import React from 'react';
-import Conditional from './practice/Conditional';
-// import './App.css';
+// https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
+// https://swapi.co/
+
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      isLoggedIn: false
+      loading: false,
+      character: {}
     }
-    this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick() {
-    this.setState(prevState => {
-      return {
-        isLoggedIn: !prevState.isLoggedIn
-      }
-    })
+  componentDidMount() {
+    this.setState({loading: true})
+    fetch("https://swapi.co/api/people/1")
+          .then(response => response.json())
+          .then(data => (
+            this.setState({
+              loading: false,
+              character: data
+            })
+          ))
   }
 
   render() {
-    let buttonText = this.state.isLoggedIn ? "LOG OUT" : "LOG IN"
-    let displayText = this.state.isLoggedIn ? "Logged in" : "Logged out"
+    const text = this.state.loading ? "loading..." : this.state.character.name
     return (
       <div>
-        <button onClick={this.handleClick}>{buttonText}</button>
-        <h2>{displayText}</h2>
+        <p>{text}</p>
       </div>
     )
   }
+
 }
 
 export default App
