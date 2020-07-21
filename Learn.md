@@ -66,4 +66,10 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - use "fetch()" to fetch data
   - good to do in componentDidMount()
 # Forms
-  - 
+  - https://reactjs.org/docs/forms.html
+  - React monitor the form all the time
+  - onChange can reflect the changes everytime users input.
+  - to make the help function reusable, we can define a "name" property in the input tag. And handleChange() can get the event and use "event.target.name"" to get the parameter. [event.target.name] can change the property into string
+  - Control Form:
+    - add a "value" property
+    - An <input> with a value property is an controlled component:
