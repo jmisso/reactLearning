@@ -1,11 +1,13 @@
 import React from 'react';
-import FormContainer from "./components/FormContainer"
-// https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
-// https://swapi.co/
+import Header from './components/Header';
+import MemeGenerator from './components/MemeGenerator';
 
 function App() {
   return (
-    <FormContainer />
+    <div>
+      <Header />
+      <MemeGenerator />
+    </div>
   )
 }
 

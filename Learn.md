@@ -34,7 +34,7 @@ React virtual DOM to enhance its performance. React can get the different of eac
     - map: return an object
 # Class Based Components
   - class need to extend _React.Component_; render() method is a must
-  - everytime we need to use props, we ned to use as {this.props}
+  - everytime we need to use props, we need to use as {this.props}
 # State
   - state is the data that component maintains
   - if we need to use _State_, it need to be class based components.
@@ -82,3 +82,5 @@ React virtual DOM to enhance its performance. React can get the different of eac
     - submit event handler can be placed inside form tag.
 # Container/Component Architecture
   - separate different components into different files.
+# Meme Generator Capstone Project
+  - 
