@@ -83,4 +83,3 @@ React virtual DOM to enhance its performance. React can get the different of eac
 # Container/Component Architecture
   - separate different components into different files.
 # Meme Generator Capstone Project
-  - 
