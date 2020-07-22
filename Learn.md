@@ -80,3 +80,5 @@ React virtual DOM to enhance its performance. React can get the different of eac
   - Submit a form: use button
     - when a button in form tag, it recognize as submit button
     - submit event handler can be placed inside form tag.
+# Container/Component Architecture
+  - separate different components into different files.
